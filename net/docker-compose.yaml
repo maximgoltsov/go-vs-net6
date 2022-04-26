@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    mem_limit: 512m
+    cpus: 0.5
+    ports:
+    - "9999:80"
